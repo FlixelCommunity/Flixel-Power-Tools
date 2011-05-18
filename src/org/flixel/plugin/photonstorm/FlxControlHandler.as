@@ -6,7 +6,7 @@
  * v1.2 First real version deployed to dev
  * v1.1 Updated for the Flixel 2.5 Plugin system
  * 
- * @version 1.3 - May 16th 2011
+ * @version 1.3 - May 18th 2011
  * @link http://www.photonstorm.com
  * @author Richard Davey / Photon Storm
 */
@@ -24,10 +24,9 @@ package org.flixel.plugin.photonstorm
 	 * 
 	 * TODO
 	 * ----
-	 * 
+	 * Support for angles! Thrust like spaceship movement
 	 * Specify animation frames to play based on velocity
 	 * Hotkeys (bind a key to a user function - like for weapon select)
-	 * More Test Suite tests!
 	 * Variable gravity (based on height)
 	 */
 	public class FlxControlHandler
@@ -72,8 +71,8 @@ package org.flixel.plugin.photonstorm
 		private var jumpKeyMode:uint;		// The jump key mode
 		private var nextJumpTime:int; 		// The internal time when they can next jump
 		private var lastJumpTime:int; 		// The internal time of when when they last jumped
-		private var jumpFromFallTime:int; 	// TODO: A short window of opportunity for them to jump having just fallen off the edge of a surface
-		private var extraSurfaceTime:int; 	// TODO: Internal time of when they last collided with a valid jumpSurface
+		private var jumpFromFallTime:int; 	// A short window of opportunity for them to jump having just fallen off the edge of a surface
+		private var extraSurfaceTime:int; 	// Internal time of when they last collided with a valid jumpSurface
 		private var jumpSurface:uint; 		// The surfaces from FlxObject they can jump from (i.e. FlxObject.FLOOR)
 		private var jumpCallback:Function;	// A function to call every time they jump
 		
@@ -181,6 +180,24 @@ package org.flixel.plugin.photonstorm
 			
 			setMaximumSpeed(xSpeedMax, ySpeedMax);
 			setDeceleration(xDeceleration, yDeceleration);
+		}
+		
+		/**
+		 * If you know you need the same value for the acceleration, maximum speeds and (optionally) deceleration then this is a quick way to set them.
+		 * 
+		 * @param	speed			The speed in pixels per second in which the sprite will move/accelerate/decelerate
+		 * @param	acceleration	If true it will set the speed value as the deceleration value (default) false will leave deceleration disabled
+		 */
+		public function setStandardSpeed(speed:uint, acceleration:Boolean = true):void
+		{
+			if (acceleration)
+			{
+				setMovementSpeed(speed, speed, speed, speed, speed, speed);
+			}
+			else
+			{
+				setMovementSpeed(speed, speed, speed, speed);
+			}
 		}
 		
 		/**

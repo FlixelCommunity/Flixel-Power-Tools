@@ -1,14 +1,12 @@
-Flixel Power Tools
-==================
+Flixel Power Tools v2.56-01
+===========================
 
-Version 1.9 (final release)
-
-November 28th 2013
-
-By Richard Davey, [Photon Storm](http://www.photonstorm.com)
+[Flixel](http://flixel.org) is a well known open source and free game engine created by [Adam “Atomic” Saltsman](http://twitter.com/AdamAtomic). Flixel has been used in hundreds of games, including IGF nominees, Adult Swim games, and avant-garde experiments. Many Flixel users make their first game ever in Flixel.
 
 The [Flixel Power Tools](http://www.photonstorm.com/flixel-power-tools) are a package
-of classes designed to provide extra functionality to your Flixel 2.5+ games.
+of classes designed to provide extra functionality to your Flixel games. Originally created by Richard Davey ([Photon Storm](http://www.photonstorm.com)), this is the [**Flixel Community**](http://flixelcommunity.org/) fork of the library, striving to keep the library living and up to date with the latest version of Flixel.
+
+The current version of Flixel Power Tools uses the [**Flixel Community** version of Flixel](https://github.com/FlixelCommunity/flixel), now at [**Flixel v2.56**](https://github.com/FlixelCommunity/flixel/releases/tag/v2.56), a version which fixes many of Flixel's older bugs, while staying reverse compatible with projects that already use [Flixel v2.55](https://github.com/FlixelCommunity/flixel/releases/tag/v2.55) (the current version in [AdamAtomic/flixel](https://github.com/AdamAtomic/flixel)).
 
 
 Quick Install Guide
@@ -18,38 +16,41 @@ Copy the `src` and `lib` folders into your ActionScript project. All the classes
 
 	src/org/flixel/plugin/photonstorm
 
-Now read the "Getting Started Guide" in the `Docs` folder; it contains important information that will 
+Alternatively, you can download the SWC (found either in the `bin` folder if you have one, or in [the "releases" section on GitHub](https://github.com/FlixelCommunity/Flixel-Power-Tools/releases)) into your `lib` folder, and your IDE should help you to properly import it into your project.
+
+Now read the "Getting Started Guide" in the `docs` branch; it contains important information that will 
 help you compile!
 
 
 Getting Started Guide
 ---------------------
 
-There is a comprehensive Getting Started Guide in both Word and PDF format in the `Docs` branch:
+There is a comprehensive Getting Started Guide in both Word and PDF format in the `docs` branch:
 
-https://github.com/FlixelCommunity/Flixel-Power-Tools/tree/docs
+ * https://github.com/FlixelCommunity/Flixel-Power-Tools/tree/docs
 
 Documentation is also provided built-in to the classes. AS3 IDEs such as FlashDevelop will
 provide context-sensitive help for all classes and functions in the Flixel Power Tools.
 
-Finally check out the home page at http://www.photonstorm.com/flixel-power-tools for updates.
+Finally check out the home page at http://www.photonstorm.com/flixel-power-tools for more information.
 
 
 Test Suite
 ----------
 
-Get the full Test Suite from here:
+The Flixel Power Tools comes with a comprehensive Test Suite. Use it to visually see the 
+tools in action, and then learn from the source code and comments within. Get the full Test Suite 
+by checking out the `test-suite` branch, or view the souce online from here:
 
-https://github.com/FlixelCommunity/Flixel-Power-Tools/tree/test-suite
+* [GitHub: FlixelCommunity/Flixel-Power-Tools/test-suite](https://github.com/FlixelCommunity/Flixel-Power-Tools/tree/test-suite)
 
-The Flixel Power Tools come with a comprehensive Test Suite. Use it to visually see the 
-tools in action, and then learn from the source code and comments within.
+To run the Test Suite, launch the following SWF:
 
-To run the Test Suite launch the following SWF:
+    bin/FlixelPowerTools.swf
 
-    Test Suite/bin/FlixelPowerTools.swf
+Or you can view the result from the test suite online:
 
-If you don't have Flash Player installed locally then open `index.html` in a browser.
+ * http://flixelcommunity.org/Flixel-Power-Tools/
 
 
 Classes
@@ -99,36 +100,12 @@ Special FX Includes
 Contributing
 ------------
 
-I'm afraid that the Flixel Power Tools are no longer maintained by myself. I have moved on to [other things](http://phaser.io).
-
-I would strongly suggest you start using the [Flixel Commmunity](https://github.com/FlixelCommunity) version of Flixel which contains updated versions of these tools.
+If you want to contribute with Flixel Community, be welcome! You can help us with code, testing, tutorials and much more. Take a look at the [CONTRIBUTING](https://github.com/FlixelCommunity/flixel/blob/master/CONTRIBUTING.md) file for more.
 
 License
--------
+------------
 
-**Copyright &copy; 2011, [Richard Davey](http://www.photonstorm.com)**
+The Flixel Community version (as well as PhotonStorm's version) of Flixel Power Tools is licensed under the [MIT](http://opensource.org/licenses/MIT) license.
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the &ldquo;Software&rdquo;), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
-[1]: https://github.com/photonstorm/Flixel-Power-Tools/issues
 [fpt]: https://github.com/photonstorm/Flixel-Power-Tools
 [ff]: http://flixel.org/forums/

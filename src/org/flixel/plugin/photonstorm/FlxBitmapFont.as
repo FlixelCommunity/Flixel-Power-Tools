@@ -65,12 +65,12 @@ package org.flixel.plugin.photonstorm
 		public static const ALIGN_CENTER:String = "center";
 		
 		/**
-		 * Text Set 1 = !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+		 * Text Set 1 = !\"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?&#64;ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 		 */
 		public static const TEXT_SET1:String = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 		
 		/**
-		 * Text Set 2 =  !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
+		 * Text Set 2 =  !\"#$%&amp;'()*+,-./0123456789:;&lt;=>&gt;&#64;ABCDEFGHIJKLMNOPQRSTUVWXYZ
 		 */
 		public static const TEXT_SET2:String = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		

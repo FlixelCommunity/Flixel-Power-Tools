@@ -482,6 +482,30 @@ package org.flixel.plugin.photonstorm
         {
             return ax * bx + ay * by;
         }
+
+        /**
+         * Returns either -1 or 1 depending on the sign of the input int value. Notice: sign of 0 is 1
+         * 
+         * @param 	val 	Input int value
+         *
+         * @return Sign of input (int)
+         */
+        public static function getSignOfInt(val : int):int
+		{
+			return (val >= 0 ? 1 : -1);
+		}
+		
+		/**
+         * Returns either -1 or 1 (number) depending on the sign of the input number value. Notice: sign of 0 is 1
+         * 
+         * @param 	val 	Input number value
+         *
+         * @return Sign of input (number)
+         */
+		public static function getSignOfNumber(val : Number):Number
+		{
+			return (val >= 0.0 ? 1.0 : -1.0);
+		}
         
 		/**
 		 * Randomly returns either a 1 or -1

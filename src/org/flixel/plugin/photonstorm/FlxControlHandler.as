@@ -1183,14 +1183,30 @@ package org.flixel.plugin.photonstorm
 			
 			if (capVelocity)
 			{
-				if (entity.velocity.x > entity.maxVelocity.x)
+				if (entity.velocity.x != 0 && entity.velocity.y != 0)
 				{
-					entity.velocity.x = entity.maxVelocity.x;
+					// If both velocities are non-zero, we cap them to: maxValue * (sqrt(2) / 2)
+					if (Math.abs(entity.velocity.x) > (entity.maxVelocity.x * 0.70711))
+					{
+						entity.velocity.x = FlxMath.getSignOfNumber(entity.velocity.x) * entity.maxVelocity.x * 0.70711;
+					}
+					
+					if (Math.abs(entity.velocity.y) > (entity.maxVelocity.y * 0.70711) )
+					{
+						entity.velocity.y = FlxMath.getSignOfNumber(entity.velocity.y) * entity.maxVelocity.y * 0.70711;
+					}
 				}
-				
-				if (entity.velocity.y > entity.maxVelocity.y)
+				else
 				{
-					entity.velocity.y = entity.maxVelocity.y;
+					if (Math.abs(entity.velocity.x) > entity.maxVelocity.x)
+					{
+						entity.velocity.x = FlxMath.getSignOfNumber(entity.velocity.x) * entity.maxVelocity.x;
+					}
+					
+					if (Math.abs(entity.velocity.y) > entity.maxVelocity.y)
+					{
+						entity.velocity.y = FlxMath.getSignOfNumber(entity.velocity.y) * entity.maxVelocity.y;
+					}
 				}
 			}
 			

@@ -12,7 +12,7 @@
  * @see Requires FlxMath
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
 	import flixel.FlxSprite;
 	

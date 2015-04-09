@@ -12,7 +12,7 @@
  * @author Richard Davey / Photon Storm
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
 	import flash.geom.Rectangle;
 	

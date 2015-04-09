@@ -16,7 +16,8 @@ package org.flixel.plugin.photonstorm
 {
 	import flash.geom.Rectangle;
 	
-	import org.flixel.*;
+	import flixel.FlxG;
+	import flixel.util.FlxRect;
 	
 	/**
 	 * Adds a set of fast Math functions and extends a few commonly used ones

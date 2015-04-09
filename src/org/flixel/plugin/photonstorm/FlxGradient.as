@@ -16,7 +16,11 @@ package org.flixel.plugin.photonstorm
 {
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	import org.flixel.*;
+	
+	import flixel.FlxSprite;
+	
+	import flixel.plugin.photonstorm.FlxMath;
+	import flixel.plugin.photonstorm.FlxColor;
 	
 	import flash.display.Bitmap;
 	import flash.geom.Matrix;

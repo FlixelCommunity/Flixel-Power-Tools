@@ -13,7 +13,7 @@
  * @author Richard Davey / Photon Storm
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
 	import flash.display.BitmapData;
 	import flash.display.Sprite;
@@ -29,9 +29,6 @@ package org.flixel.plugin.photonstorm
 	import flixel.FlxSprite;
 	import flixel.tile.FlxTileblock;
 	import flixel.util.FlxRect;
-	
-	import flixel.plugin.photonstorm.FlxMath;
-	import flixel.plugin.photonstorm.FlxColor;
 	
 	public class FlxCollision 
 	{

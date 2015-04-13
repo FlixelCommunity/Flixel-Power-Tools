@@ -13,7 +13,11 @@
 
 package org.flixel.plugin.photonstorm 
 {
-	import org.flixel.*;
+	import flixel.FlxBasic;
+	import flixel.FlxG;
+	import flixel.plugin.photonstorm.FlxMath;
+	import flixel.util.FlxPoint;
+	import flixel.util.FlxRect;
 	
 	public class FlxMouseControl extends FlxBasic
 	{

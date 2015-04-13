@@ -1,6 +1,6 @@
 package org.flixel.plugin.photonstorm.BaseTypes 
 {
-	import org.flixel.*;
+	import flixel.FlxG;
 	import org.flixel.plugin.photonstorm.FlxExtendedSprite;
 	
 	public class MouseSpring 

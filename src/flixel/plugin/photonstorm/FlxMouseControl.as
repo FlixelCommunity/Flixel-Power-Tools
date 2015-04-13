@@ -11,11 +11,10 @@
  * @author Richard Davey / Photon Storm
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
 	import flixel.FlxBasic;
 	import flixel.FlxG;
-	import flixel.plugin.photonstorm.FlxMath;
 	import flixel.util.FlxPoint;
 	import flixel.util.FlxRect;
 	

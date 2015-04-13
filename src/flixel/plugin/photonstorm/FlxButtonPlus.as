@@ -12,7 +12,7 @@
  * @author Richard Davey / Photon Storm
 */
 
-package org.flixel.plugin.photonstorm
+package flixel.plugin.photonstorm
 {
 	import flash.events.MouseEvent;
 	
@@ -20,9 +20,6 @@ package org.flixel.plugin.photonstorm
 	import flixel.FlxG;
 	import flixel.FlxGroup;
 	import flixel.FlxSprite;
-	import flixel.plugin.photonstorm.FlxExtendedSprite;
-	import flixel.plugin.photonstorm.FlxGradient;
-	import flixel.plugin.photonstorm.FlxMath;
 	import flixel.ui.FlxText;
 	
 	/**

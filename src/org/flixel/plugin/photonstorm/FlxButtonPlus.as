@@ -16,7 +16,14 @@ package org.flixel.plugin.photonstorm
 {
 	import flash.events.MouseEvent;
 	
-	import org.flixel.*;
+	import flixel.FlxCamera;
+	import flixel.FlxG;
+	import flixel.FlxGroup;
+	import flixel.FlxSprite;
+	import flixel.plugin.photonstorm.FlxExtendedSprite;
+	import flixel.plugin.photonstorm.FlxGradient;
+	import flixel.plugin.photonstorm.FlxMath;
+	import flixel.ui.FlxText;
 	
 	/**
 	 * A simple button class that calls a function when clicked by the mouse.

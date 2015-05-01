@@ -13,10 +13,13 @@
  * @author Richard Davey / Photon Storm
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
-	import org.flixel.*;
-	import org.flixel.plugin.photonstorm.BaseTypes.MouseSpring;
+	import flixel.FlxSprite;
+	import flixel.FlxG;
+	import flixel.plugin.photonstorm.BaseTypes.MouseSpring;
+	import flixel.util.FlxPoint;
+	import flixel.util.FlxRect;
 
 	/**
 	 * An enhanced FlxSprite that is capable of receiving mouse clicks, being dragged and thrown, mouse springs, gravity and other useful things

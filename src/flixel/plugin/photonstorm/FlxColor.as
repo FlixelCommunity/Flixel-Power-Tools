@@ -13,9 +13,9 @@
  * @see Depends upon FlxMath
 */
 
-package org.flixel.plugin.photonstorm
+package flixel.plugin.photonstorm
 {
-	import org.flixel.*;
+	import flixel.FlxG;
 	
 	/**
 	 * <code>FlxColor</code> is a set of fast color manipulation and color harmony methods.<br />

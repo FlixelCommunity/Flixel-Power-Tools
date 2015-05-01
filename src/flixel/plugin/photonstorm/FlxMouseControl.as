@@ -11,9 +11,12 @@
  * @author Richard Davey / Photon Storm
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
-	import org.flixel.*;
+	import flixel.FlxBasic;
+	import flixel.FlxG;
+	import flixel.util.FlxPoint;
+	import flixel.util.FlxRect;
 	
 	public class FlxMouseControl extends FlxBasic
 	{

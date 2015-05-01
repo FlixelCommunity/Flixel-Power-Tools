@@ -12,11 +12,12 @@
  * @see Requires FlxMath
 */
 
-package org.flixel.plugin.photonstorm 
+package flixel.plugin.photonstorm 
 {
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	import org.flixel.*;
+	
+	import flixel.FlxSprite;
 	
 	import flash.display.Bitmap;
 	import flash.geom.Matrix;
